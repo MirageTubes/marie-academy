@@ -1,25 +1,28 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Raleway } from "next/font/google";
+import { Bodoni_Moda, Jost } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { fullAddress, site } from "@/config/site";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+// Bodoni: the high-contrast serif of ballet programmes and fashion mastheads.
+const bodoni = Bodoni_Moda({
+  variable: "--font-bodoni",
   subsets: ["latin"],
-  axes: ["opsz", "SOFT"],
+  style: ["normal", "italic"],
+  axes: ["opsz"],
 });
 
-// Raleway echoes the "Performing Arts Academy" lettering in the logo.
-const raleway = Raleway({
-  variable: "--font-raleway",
+// Jost: a clean geometric sans that sits well beside the logo's lettering.
+const jost = Jost({
+  variable: "--font-jost",
   subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: `${site.name} — ${site.tagline}`, template: `%s · ${site.name}` },
+  title: { default: `${site.name} | ${site.tagline}`, template: `%s · ${site.name}` },
   description: site.description,
   openGraph: {
     type: "website",
@@ -48,7 +51,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${raleway.variable} antialiased`}>
+    <html lang="en" className={`${bodoni.variable} ${jost.variable} antialiased`}>
       <body className="flex min-h-dvh flex-col">
         <script
           type="application/ld+json"

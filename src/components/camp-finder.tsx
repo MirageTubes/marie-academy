@@ -18,7 +18,7 @@ export function CampFinder({ sessions }: { sessions: CampSession[] }) {
             How old is your camper this summer?
           </label>
           <p aria-live="polite" className="mt-1 text-sm text-muted">
-            {age === null ? `${sessions.length} sessions for ages 6–17` : `${count} session${count === 1 ? "" : "s"} for age ${age}`}
+            {age === null ? `${sessions.length} sessions for ages 6 to 17` : `${count} session${count === 1 ? "" : "s"} for age ${age}`}
           </p>
         </div>
         <select
@@ -48,7 +48,7 @@ export function CampFinder({ sessions }: { sessions: CampSession[] }) {
               aria-hidden={!on || undefined}
             >
               <div className="flex items-start justify-between gap-3">
-                <p className="eyebrow text-gold-deep">Ages {s.minAge}–{s.maxAge}</p>
+                <p className="eyebrow text-gold-deep">Ages {s.minAge} to {s.maxAge}</p>
                 {s.spotsLeft <= 5 && (
                   <span className="rounded-full bg-ink px-3 py-1 text-xs font-semibold text-white">
                     {s.spotsLeft} spots left

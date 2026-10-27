@@ -1,5 +1,5 @@
 // Every photo slot on the site. Files live in /public/images and are downloaded by
-// `npm run photos` (scripts/fetch-photos.mjs) — replace any file with the academy's own photography.
+// `npm run photos` (scripts/fetch-photos.mjs). Replace any file with the academy's own photography.
 // A missing file falls back to a branded placeholder, so the site never shows a broken image.
 
 export const images = {

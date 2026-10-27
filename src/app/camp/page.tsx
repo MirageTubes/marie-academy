@@ -9,7 +9,7 @@ import { campDay, campFaqs, campSessions, campYear, earlyBirdDeadline } from "@/
 
 export const metadata: Metadata = {
   title: `Summer Camp ${campYear}`,
-  description: `Dance, drama, and music summer camps for ages 6–17. Early-bird pricing until ${earlyBirdDeadline}.`,
+  description: `Dance, drama, and music summer camps for ages 6 to 17. Early-bird pricing until ${earlyBirdDeadline}.`,
 };
 
 export default function CampPage() {
@@ -19,7 +19,7 @@ export default function CampPage() {
         eyebrow={`Summer Camp ${campYear}`}
         image={images.camp}
         title="One summer. Endless encores."
-        intro={`Themed day camps and intensives for ages 6–17, each ending in a performance for families. Save with early-bird pricing until ${earlyBirdDeadline}.`}
+        intro={`Themed day camps and intensives for ages 6 to 17, each ending in a performance for families. Save with early-bird pricing until ${earlyBirdDeadline}.`}
       >
         <ButtonLink href="#sessions" variant="gold">
           Find a session

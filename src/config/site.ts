@@ -1,5 +1,5 @@
 // Single source of truth for the academy's identity and contact details.
-// Swap the placeholder values below — every page reads from here.
+// Swap the placeholder values below; every page reads from here.
 
 export const site = {
   name: "Marie Performing Arts Academy",
@@ -18,7 +18,7 @@ export const site = {
     postalCode: "00000",
     country: "US",
   },
-  hours: "Mon–Fri 9:00–19:00 · Sat 9:00–15:00",
+  hours: "Monday to Friday, 9 a.m. to 7 p.m. Saturday, 9 a.m. to 3 p.m.",
   donateUrl: "https://donate.example.com/marie-academy", // TODO: payment provider link
   applyUrl: "/admissions#apply",
   social: [
@@ -95,7 +95,7 @@ export const menu = [
     label: "Summer Camp",
     href: "/camp",
     image: "camp",
-    blurb: "Themed day camps and intensives for ages 6–17.",
+    blurb: "Themed day camps and intensives for ages 6 to 17.",
     links: [
       { label: "Sessions", href: "/camp#sessions" },
       { label: "A day at camp", href: "/camp#day" },

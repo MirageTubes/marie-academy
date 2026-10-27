@@ -10,7 +10,7 @@ export function SiteFooter() {
       <Container className="grid gap-12 border-b border-white/10 py-16 lg:grid-cols-[1.2fr_1fr]">
         <div>
           <p className="eyebrow text-gold">Stay in the wings</p>
-          <h2 className="mt-3 max-w-md text-4xl">Performances, auditions, and camp news — once a month.</h2>
+          <h2 className="mt-3 max-w-md text-4xl">Performances, auditions, and camp news, once a month.</h2>
         </div>
         <div className="flex items-end">
           <NewsletterForm />

@@ -12,7 +12,7 @@ export type AcademyEvent = {
   ticketUrl?: string;
 };
 
-// Placeholder season — replace with the real calendar.
+// Placeholder season; replace with the real calendar.
 export const events: AcademyEvent[] = [
   {
     id: "winter-showcase",
@@ -111,6 +111,11 @@ export function formatEventDate(iso: string) {
     month: d.toLocaleDateString("en-US", { ...opts, month: "short" }),
     weekday: d.toLocaleDateString("en-US", { ...opts, weekday: "long" }),
     full: d.toLocaleDateString("en-US", { ...opts, weekday: "short", month: "long", day: "numeric", year: "numeric" }),
-    time: d.toLocaleTimeString("en-US", { ...opts, hour: "numeric", minute: "2-digit" }),
+    // "7:00 PM" → "7 p.m.", "6:30 PM" → "6:30 p.m."
+    time: d
+      .toLocaleTimeString("en-US", { ...opts, hour: "numeric", minute: "2-digit" })
+      .replace(":00", "")
+      .replace(/\s?AM$/, " a.m.")
+      .replace(/\s?PM$/, " p.m."),
   };
 }

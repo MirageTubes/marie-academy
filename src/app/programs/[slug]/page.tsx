@@ -67,7 +67,7 @@ export default async function ProgramPage({ params }: PageProps<"/programs/[slug
           <div className="grid gap-6 md:grid-cols-2">
             {program.tracks.map((t) => (
               <article key={t.name} className="flex gap-6 rounded-3xl bg-ivory p-8">
-                <p className="w-20 shrink-0 font-display text-3xl text-gold-deep">{t.ages}</p>
+                <p className="w-24 shrink-0 font-display text-2xl leading-tight text-gold-deep">{t.ages}</p>
                 <div>
                   <h3 className="text-2xl">{t.name}</h3>
                   <p className="mt-2 text-muted">{t.description}</p>

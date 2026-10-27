@@ -7,13 +7,13 @@ import { programs } from "@/content/programs";
 
 export const metadata: Metadata = {
   title: "Programs",
-  description: "Dance, drama, and music programs for ages 4 to adult — from first classes to pre-professional training.",
+  description: "Dance, drama, and music programs for ages four to adult, from first classes to pre-professional training.",
 };
 
 const levels = [
-  { name: "Early Years", ages: "4–7", text: "Playful foundations in movement, music, and storytelling." },
-  { name: "Junior", ages: "8–12", text: "Structured technique with termly showcases." },
-  { name: "Senior & Pre-Professional", ages: "13–18", text: "Intensive training, productions, and audition prep." },
+  { name: "Early Years", ages: "4 to 7", text: "Playful foundations in movement, music, and storytelling." },
+  { name: "Junior", ages: "8 to 12", text: "Structured technique with termly showcases." },
+  { name: "Senior and Pre-Professional", ages: "13 to 18", text: "Intensive training, productions, and audition prep." },
   { name: "Adult", ages: "18+", text: "Open classes and ensembles at every level." },
 ];
 
@@ -49,7 +49,7 @@ export default function ProgramsPage() {
           <SectionHeading
             eyebrow="Pathways"
             title="A clear path at every age"
-            intro="Students move up by readiness, not just birthday — faculty review progress each term."
+            intro="Students move up by readiness, not just birthday. Faculty review progress each term."
           />
           <ol className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {levels.map((l, i) => (

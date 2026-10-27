@@ -29,7 +29,7 @@ export default function GivePage() {
         eyebrow="Support the academy"
         image={images.give}
         title="Every gift opens a curtain."
-        intro="One in three Marie students receives financial aid. Your support makes sure talent — not income — decides who takes the stage."
+        intro="One in three Marie students receives financial aid. Your support makes sure talent, not income, decides who takes the stage."
       />
 
       <Section id="impact">

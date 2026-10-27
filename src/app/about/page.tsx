@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 const values = [
   { title: "Craft first", text: "Technique is the foundation of freedom. We teach it patiently, precisely, and joyfully." },
-  { title: "Real stages", text: "Every student performs for a live audience every year — because art is meant to be shared." },
+  { title: "Real stages", text: "Every student performs for a live audience every year, because art is meant to be shared." },
   { title: "Every artist belongs", text: "Scholarships, sliding-scale tuition, and adaptive classes keep our doors open to all." },
-  { title: "Working artists teach", text: "Our faculty perform, choreograph, and direct professionally — and bring that world into class." },
+  { title: "Working artists teach", text: "Our faculty perform, choreograph, and direct professionally, and they bring that world into class." },
 ];
 
 const leadership = [
@@ -45,11 +45,11 @@ export default function AboutPage() {
           <div>
             <Eyebrow>Our mission</Eyebrow>
             <p className="mt-5 font-display text-3xl leading-snug sm:text-4xl">
-              To train artists of every age with the rigor of a conservatory and the warmth of a family — and to give
+              To train artists of every age with the rigor of a conservatory and the warmth of a family, and to give
               every one of them a stage.
             </p>
             <p className="mt-6 text-lg text-muted">
-              Placeholder: share the founder’s story here — why Marie began, who it serves, and what makes it
+              Placeholder: share the founder’s story here: why Marie began, who it serves, and what makes it
               different from every other school in town.
             </p>
           </div>

@@ -131,10 +131,10 @@ export function CampRegistrationForm({ sessions }: { sessions: CampSession[] }) 
       <Field label="Phone (optional)" name="phone">
         <input {...fieldProps(state, "phone")} type="tel" autoComplete="tel" className={inputClass} />
       </Field>
-      <Field label="Camper's name" name="camperName" error={state.errors?.camperName}>
+      <Field label="Camper’s name" name="camperName" error={state.errors?.camperName}>
         <input className={inputClass} {...fieldProps(state, "camperName")} />
       </Field>
-      <Field label="Camper's age this summer" name="camperAge" error={state.errors?.camperAge}>
+      <Field label="Camper’s age this summer" name="camperAge" error={state.errors?.camperAge}>
         <input type="number" min={4} max={18} inputMode="numeric" className={inputClass} {...fieldProps(state, "camperAge")} />
       </Field>
       <Field label="Session" name="session" error={state.errors?.session}>
@@ -144,7 +144,7 @@ export function CampRegistrationForm({ sessions }: { sessions: CampSession[] }) 
           </option>
           {sessions.map((s) => (
             <option key={s.id} value={s.id}>
-              {s.name} · {s.dates} · ages {s.minAge}–{s.maxAge}
+              {s.name} · {s.dates} · ages {s.minAge} to {s.maxAge}
             </option>
           ))}
         </select>

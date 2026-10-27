@@ -61,7 +61,7 @@ export function EventBrowser({ events }: { events: AcademyEvent[] }) {
         </div>
       ) : (
         <p className="rounded-2xl border border-dashed border-ink/20 p-10 text-center text-muted">
-          No events match — try another filter or search term.
+          No events match. Try another filter or search term.
         </p>
       )}
     </div>

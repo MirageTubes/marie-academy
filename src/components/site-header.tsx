@@ -21,7 +21,7 @@ export function SiteHeader() {
         Skip to content
       </a>
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-5 sm:px-8">
-        <Link href="/" className="flex items-center gap-3" aria-label={`${site.name} — home`}>
+        <Link href="/" className="flex items-center gap-3" aria-label={`${site.name} home`}>
           <Image src="/brand/logo-white.png" alt="" width={52} height={52} priority className="h-13 w-13" />
           <span className="hidden leading-tight sm:block">
             <span className="block font-display text-xl tracking-[0.14em]">MARIE</span>

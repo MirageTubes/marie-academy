@@ -11,8 +11,8 @@
   --color-gold: #c9a15a;
   --color-gold-deep: #8a6420;
 
-  --font-sans: var(--font-raleway);
-  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-jost);
+  --font-display: var(--font-bodoni);
 }
 
 @layer base {
@@ -24,7 +24,7 @@
     @apply bg-ivory text-ink font-sans;
   }
   h1, h2, h3 {
-    @apply font-display tracking-tight;
+    @apply font-display font-medium tracking-[-0.005em];
     text-wrap: balance;
   }
   p {

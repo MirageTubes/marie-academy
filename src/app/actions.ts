@@ -47,7 +47,7 @@ export async function submitContact(_prev: FormState, formData: FormData): Promi
   if (Object.keys(errors).length) return invalid(errors, formData);
 
   await deliver("contact", data);
-  return { status: "success", message: `Thank you, ${data.name}. We'll reply within two working days.` };
+  return { status: "success", message: `Thank you, ${data.name}. We’ll reply within two working days.` };
 }
 
 export async function submitCampRegistration(_prev: FormState, formData: FormData): Promise<FormState> {
@@ -72,13 +72,13 @@ export async function submitCampRegistration(_prev: FormState, formData: FormDat
     errors.camperAge = "Enter an age between 4 and 18.";
   if (!session) errors.session = "Choose a session.";
   else if (!errors.camperAge && (data.camperAge < session.minAge || data.camperAge > session.maxAge))
-    errors.session = `${session.name} is for ages ${session.minAge}–${session.maxAge}.`;
+    errors.session = `${session.name} is for ages ${session.minAge} to ${session.maxAge}.`;
   if (Object.keys(errors).length) return invalid(errors, formData);
 
   await deliver("camp-registration", data);
   return {
     status: "success",
-    message: `${data.camperName} is on the list for ${session!.name}! We'll email payment details to ${data.email} shortly.`,
+    message: `${data.camperName} is on the list for ${session!.name}! We’ll email payment details to ${data.email} shortly.`,
   };
 }
 
@@ -86,5 +86,5 @@ export async function subscribe(_prev: FormState, formData: FormData): Promise<F
   const email = text(formData, "email");
   if (!emailPattern.test(email)) return invalid({ email: "Enter a valid email address." }, formData);
   await deliver("newsletter", { email });
-  return { status: "success", message: "You're subscribed. See you at the theatre!" };
+  return { status: "success", message: "You’re subscribed. See you at the theatre!" };
 }

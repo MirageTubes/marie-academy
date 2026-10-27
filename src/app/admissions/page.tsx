@@ -17,9 +17,9 @@ const steps = [
 ];
 
 const auditions = [
-  { date: "January 16, 2027", tracks: "Dance — Pre-Professional", note: "Bring ballet and contemporary attire" },
-  { date: "January 30, 2027", tracks: "Drama — Conservatory Prep", note: "Two contrasting monologues, under 2 minutes each" },
-  { date: "February 13, 2027", tracks: "Music — Advanced & Ensembles", note: "Two contrasting pieces and scales" },
+  { date: "January 16, 2027", tracks: "Dance: Pre-Professional", note: "Bring ballet and contemporary attire." },
+  { date: "January 30, 2027", tracks: "Drama: Conservatory Prep", note: "Two contrasting monologues, each under two minutes." },
+  { date: "February 13, 2027", tracks: "Music: Advanced and Ensembles", note: "Two contrasting pieces and scales." },
 ];
 
 const tuition = [
@@ -36,7 +36,7 @@ export default function AdmissionsPage() {
         eyebrow="Admissions"
         image={images.admissions}
         title="Your first step onto our stage."
-        intro="Applications are open year-round. Most students begin with a free trial class — no experience required for our foundation programs."
+        intro="Applications are open year-round. Most students begin with a free trial class. No experience is required for our foundation programs."
       >
         <ButtonLink href="#apply" variant="gold">
           Start an application
@@ -101,7 +101,7 @@ export default function AdmissionsPage() {
           <SectionHeading
             eyebrow="Tuition & financial aid"
             title="Transparent tuition. Generous aid."
-            intro="Placeholder pricing — update with the academy’s real rates. Sibling discounts apply automatically."
+            intro="Placeholder pricing: update with the academy’s real rates. Sibling discounts apply automatically."
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {tuition.map((t) => (

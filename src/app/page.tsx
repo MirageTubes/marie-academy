@@ -15,7 +15,7 @@ import { programs } from "@/content/programs";
 const stats = [
   { value: "3", label: "Disciplines under one roof" },
   { value: "40+", label: "Performances every season" },
-  { value: "4–adult", label: "Ages we teach" },
+  { value: "4+", label: "From age four to adult" },
   { value: "1:8", label: "Faculty-to-student ratio" },
 ];
 
@@ -164,7 +164,7 @@ export default function Home() {
             Where artists become <em className="text-gold">unforgettable.</em>
           </h1>
           <p className="animate-rise mt-8 max-w-xl text-lg text-white/75 [animation-delay:200ms] sm:text-xl">
-            Conservatory-level training for every age — taught by working artists, proven on a real stage.
+            Conservatory-level training for every age, taught by working artists and proven on a real stage.
           </p>
           <div className="animate-rise mt-10 flex flex-wrap gap-3 [animation-delay:300ms]">
             <ButtonLink href={site.applyUrl} variant="gold">
@@ -192,7 +192,7 @@ export default function Home() {
           <div>
             <Eyebrow>Welcome to Marie</Eyebrow>
             <p className="mt-5 font-display text-3xl leading-snug sm:text-[2.6rem]">
-              A conservatory with the heart of a family — where four-year-olds take their first bow and eighteen-year-olds
+              A conservatory with the heart of a family, where four-year-olds take their first bow and eighteen-year-olds
               leave ready for the world’s stages.
             </p>
             <div className="mt-10">
@@ -208,7 +208,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Areas of study"
             title="Three disciplines. One stage."
-            intro="Train deeply in one art form or cross between them — our dancers sing in the musical, our actors move, and our musicians play for the ballet."
+            intro="Train deeply in one art form or cross between them. Our dancers sing in the musical, our actors move, and our musicians play for the ballet."
             action={<ArrowLink href="/programs">Compare all programs</ArrowLink>}
           />
           <div className="space-y-28 pt-10 sm:space-y-36">
@@ -233,7 +233,7 @@ export default function Home() {
       {/* Summer Camp */}
       <Banner image={images.camp} eyebrow={`Summer Camp ${campYear}`} title="The best summer they’ll ever perform." align="right">
         <p className="mt-6 text-lg text-white/75">
-          {campSessions.length} sessions for ages 6–17, each ending in a show for families. Early-bird pricing until{" "}
+          {campSessions.length} sessions for ages 6 to 17, each ending in a show for families. Early-bird pricing until{" "}
           {earlyBirdDeadline}.
         </p>
         <ul className="mt-8 flex flex-wrap gap-2">
@@ -298,7 +298,7 @@ export default function Home() {
         <div className="px-5 py-20 sm:px-12 sm:py-24 lg:px-16">
           <p className="eyebrow text-gold">Performances</p>
           <h2 className="mt-4 text-5xl leading-none sm:text-6xl">The season on stage.</h2>
-          <p className="mt-5 max-w-lg text-white/70">Ballets, plays, musicals, and concerts — most tickets under $25, many free.</p>
+          <p className="mt-5 max-w-lg text-white/70">Ballets, plays, musicals, and concerts. Most tickets are under $25, and many are free.</p>
           <div className="mt-8 border-b border-white/10">
             {events.slice(0, 3).map((e) => (
               <EventRow key={e.id} event={e} dark />
@@ -332,7 +332,7 @@ export default function Home() {
             “
           </p>
           <blockquote className="font-display text-3xl leading-snug sm:text-[2.6rem]">
-            Marie gave our daughter more than technique — it gave her a stage, a family, and the confidence to audition
+            Marie gave our daughter more than technique. It gave her a stage, a family, and the confidence to audition
             anywhere.
           </blockquote>
           <p className="eyebrow mt-8 text-muted">Parent of a Pre-Professional dancer</p>
@@ -342,7 +342,7 @@ export default function Home() {
       {/* Support */}
       <Banner image={images.give} eyebrow="Support the academy" title="Every gift opens a curtain.">
         <p className="mt-6 text-lg text-white/75">
-          One in three Marie students receives financial aid. Your gift makes sure talent — not income — decides who takes
+          One in three Marie students receives financial aid. Your gift makes sure talent, not income, decides who takes
           the stage.
         </p>
         <div className="mt-10 flex flex-wrap items-center gap-6">

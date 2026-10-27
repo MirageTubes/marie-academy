@@ -8,7 +8,7 @@ export type Story = {
   body: string[];
 };
 
-// Placeholder stories — replace with real news.
+// Placeholder stories; replace with real news.
 export const stories: Story[] = [
   {
     slug: "pre-professional-dancers-win-regional",
@@ -26,7 +26,7 @@ export const stories: Story[] = [
     title: "Summer Camp 2027 registration is open",
     date: "2026-10-01",
     category: "Academy News",
-    excerpt: "Four themed weeks for ages 6–17, plus a new two-week musical theatre intensive. Early-bird pricing ends January 31.",
+    excerpt: "Five themed sessions for ages 6 to 17, plus a new two-week musical theatre intensive. Early-bird pricing ends January 31.",
     body: [
       "Placeholder story text. Summarize the camp sessions, the new intensive, and early-bird pricing.",
       "Link readers to the Summer Camp page to compare sessions and register.",
@@ -39,7 +39,7 @@ export const stories: Story[] = [
     category: "Alumni",
     excerpt: "A graduate of our Musical Theatre track reflects on the training that prepared her for the professional stage.",
     body: [
-      "Placeholder story text. Share the alum's journey from first class to professional contract.",
+      "Placeholder story text. Share the alum’s journey from first class to professional contract.",
       "Include advice for current students and a photo from rehearsal.",
     ],
   },
@@ -50,7 +50,7 @@ export const stories: Story[] = [
     category: "Performance",
     excerpt: "Twelve concerts, three productions, and our first Concerto Night with full orchestra.",
     body: [
-      "Placeholder story text. Preview the season's highlights and how to get tickets.",
+      "Placeholder story text. Preview the season’s highlights and how to get tickets.",
     ],
   },
 ];
