@@ -1,16 +1,16 @@
 import type { Metadata, Viewport } from "next";
-import { Bodoni_Moda, Jost } from "next/font/google";
+import { DM_Serif_Display, Jost } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { fullAddress, site } from "@/config/site";
 import "./globals.css";
 
-// Bodoni: the high-contrast serif of ballet programmes and fashion mastheads.
-const bodoni = Bodoni_Moda({
-  variable: "--font-bodoni",
+// DM Serif Display: an elegant serif with sturdy strokes that stay crisp at headline sizes.
+const dmSerif = DM_Serif_Display({
+  variable: "--font-dm-serif",
   subsets: ["latin"],
+  weight: "400",
   style: ["normal", "italic"],
-  axes: ["opsz"],
 });
 
 // Jost: a clean geometric sans that sits well beside the logo's lettering.
@@ -51,7 +51,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${bodoni.variable} ${jost.variable} antialiased`}>
+    <html lang="en" className={`${dmSerif.variable} ${jost.variable} antialiased`}>
       <body className="flex min-h-dvh flex-col">
         <script
           type="application/ld+json"
