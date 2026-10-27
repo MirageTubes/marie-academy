@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Brand palette drawn from the black-and-white logo, with a warm stage-light gold. */
+@theme inline {
+  --color-ink: #0e0e10;
+  --color-ink-soft: #2a2a2e;
+  --color-paper: #ffffff;
+  --color-ivory: #faf7f2;
+  --color-stone: #ebe5da;
+  --color-muted: #5f5b55;
+  --color-gold: #c9a15a;
+  --color-gold-deep: #8a6420;
+
+  --font-sans: var(--font-raleway);
+  --font-display: var(--font-fraunces);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+  body {
+    @apply bg-ivory text-ink font-sans;
+  }
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-gold-deep;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@utility eyebrow {
+  @apply text-xs font-semibold uppercase tracking-[0.22em];
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility animate-rise {
+  animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
